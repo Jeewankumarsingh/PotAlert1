@@ -14,14 +14,14 @@
 
     <div class="row topcontent">
         <h3 class="text-center mb-3">Detailed Report</h3>
-        <div class="col-6">
+        <div class="col-lg-6 col-sm-12">
             <div class="card mb-3">
                 <% for(let img of report.images){ %>
                     <img class="card-img-top" src="<%= img.url %>" alt="">
                     <% } %>
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6 col-sm-12">
             <!-- Detailed Data representation -->
             <table class="table table-bordered" style="width: auto;">
                 <thead>
@@ -111,7 +111,7 @@
     <!-- Confirm Report and worker details -->
     <div class="row">
         <h3 class="text-center mt-3 mb-3">Work Status</h3>
-        <div class="col-6">
+        <div class="col-lg-6 col-sm-12">
             <form action="/reports/<%=report._id%>/works" method="POST">
                 <div class="form-group mb-3">
                     <label for="name">Worker's Name</label>
@@ -142,7 +142,7 @@
         <!--  -->
 
 
-        <div class="col-6 mt-4">
+        <div class="col-lg-6 col-sm-12 mt-4">
             <table class="table table-bordered">
                 <thead>
                     <tr>
