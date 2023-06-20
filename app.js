@@ -26,7 +26,7 @@ const upload = multer({ storage })
 const Work = require('./models/work')
 
 mongoose.set("strictQuery", true);
-mongoose.connect('mongodb+srv://jeewan-31:Test123@cluster0.xuebnup.mongodb.net/pothole-tracking', { useNewUrlParser: true });
+mongoose.connect('mongodb://127.0.0.1:27017/pothole-tracking', { useNewUrlParser: true });
 
 
 const db = mongoose.connection;
@@ -223,3 +223,5 @@ app.get("/notifications", (req, res) => {
 app.listen(3000, () => {
     console.log("Serving on port 3000");
 })
+
+//mongodb+srv://jeewan-31:Test123@cluster0.xuebnup.mongodb.net
