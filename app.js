@@ -100,7 +100,7 @@ app.post('/login', passport.authenticate('local', { failureFlash: true, failureR
 })
 
 app.get('/adminLogin', (req, res) => {
-    res.render('users/adminlogin');
+    res.render('users/adminLogin');
 })
 
 app.post('/adminLogin', passport.authenticate('local', { failureFlash: true, failureRedirect: '/login' }), (req, res) => {
