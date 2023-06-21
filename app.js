@@ -113,7 +113,7 @@ app.get('/logout', function (req, res, next) {
     req.logout(function (err) {
         if (err) { return next(err); }
         req.flash('success', "Logout Successfully")
-        res.redirect('/login');
+        res.redirect('/');
     });
 });
 
